@@ -14,6 +14,8 @@ import Cart from './pages/Cart';
 
 import logo from './pages/img/logo.png';
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 function App() {
 
     const [cart, setCart] = useState([])
@@ -70,13 +72,13 @@ function App() {
           <img src={logo} alt="로고 이미지" />
         </div>
 
-        <nav className='gnb'>
-          <NavLink className='gnb_list' to='/' >HOME</NavLink>
-          <NavLink className='gnb_list' to='/about' >ABOUT</NavLink> 
-          <NavLink className='gnb_list' to='/hobby' >HOBBY</NavLink> 
-          <NavLink className='gnb_list' to='/contact' >CONTACT</NavLink> 
-          <NavLink className='gnb_list' to='/shop'>SHOP</NavLink>
-          <NavLink className='gnb_list' to='/cart'>
+        <nav className='gnb navbar'>
+          <NavLink className='gnb_list nav-link' to='/' >HOME</NavLink>
+          <NavLink className='gnb_list nav-link' to='/about' >ABOUT</NavLink> 
+          <NavLink className='gnb_list nav-link' to='/hobby' >HOBBY</NavLink> 
+          <NavLink className='gnb_list nav-link' to='/contact' >CONTACT</NavLink> 
+          <NavLink className='gnb_list nav-link' to='/shop'>SHOP</NavLink>
+          <NavLink className='gnb_list nav-link' to='/cart'>
            CART ({cartCount})
           </NavLink>
         </nav>

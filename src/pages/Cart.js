@@ -15,7 +15,7 @@ export default function Cart({
   return (
     <div>
 
-      <h1>장바구니</h1>
+      <h1>CART</h1>
 
       {cart.length === 0 && <p>상품이 없습니다.</p>}
 
@@ -29,13 +29,13 @@ export default function Cart({
 
           <div className="qty_box">
 
-            <button onClick={() => decreaseQty(item.id)}>
+            <button className='btn btn-outline-secondary' onClick={() => decreaseQty(item.id)}>
               -
             </button>
 
             <span>{item.qty}</span>
 
-            <button onClick={() => increaseQty(item.id)}>
+            <button className='btn btn-outline-secondary' onClick={() => increaseQty(item.id)}>
               +
             </button>
 
@@ -44,7 +44,7 @@ export default function Cart({
           <p>상품 합계 : {item.price * item.qty}원</p>
 
           <button
-            className="delete_btn"
+            className="btn btn-danger"
             onClick={() => removeItem(item.id)}
           >
             삭제

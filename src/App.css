@@ -33,6 +33,8 @@
 
 .product_card img{
   width:100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .product_card button{
@@ -64,5 +66,22 @@
   color:white;
   border:none;
 }
+
+.lookbook_wrap {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.lookbook_item {
+  width: 300px; 
+}
+.lookbook_item img{
+  width: 100%; height: 400px;
+  object-fit: cover;
+}
+
+
+
 
 

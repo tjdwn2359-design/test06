@@ -20,7 +20,7 @@ export default function Shop({ addToCart }) {
 
             <p>{item.price}원</p>
 
-            <button onClick={() => addToCart(item)}>
+            <button className='btn btn-dark' onClick={() => addToCart(item)}>
               장바구니 담기
             </button>
 
